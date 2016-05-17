@@ -1,0 +1,5 @@
+toolbar:
+  - bold italic | uploadimage | link  | undo redo
+plugins:
+  - uploadimage
+  - link

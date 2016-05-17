@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#post-page {
+	
+	p:first-child {
+    font-size: 15pt;
+    font-weight: bold;
+	}
+
+	input {
+		width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+	}	
+
+	.submit_button {
+	  width: 100%;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  .submit_button:hover {
+		background-color: white;
+  	color:black;
+  	border: 3px black solid;    
+  }
+}

@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  root 'session#index'
+
+  get '', to: "session#index"
+  post '/event/new', to: "session#new"
+  post '/tinymce_assets' => 'tiny_uploader#create'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,5 +1,7 @@
 toolbar:
-  - bold italic | uploadimage | link  | undo redo
+  - bold italic | forecolor | emoticons |alignleft alignright aligncenter | uploadimage | link  | undo redo
 plugins:
   - uploadimage
   - link
+  - textcolor
+  - emoticons

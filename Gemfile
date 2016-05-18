@@ -31,6 +31,8 @@ gem 'tinymce-rails'
 gem 'tinymce-rails-imageupload', '~> 4.0.0.beta'
 gem 'paperclip'
 
+gem 'foursquare2', '~> 2.0', '>= 2.0.2'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

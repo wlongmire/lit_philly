@@ -16,6 +16,7 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "bootstrap-datetimepicker";
 
 #post-page {
 	
@@ -44,5 +45,9 @@
 		background-color: white;
   	color:black;
   	border: 3px black solid;    
+  }
+
+  .date input{
+    padding: 30px 12px;
   }
 }

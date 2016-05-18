@@ -3,9 +3,20 @@
 <div class="col-sm-6">
 	<input type="text" placeholder="Post Heading"> <br/>
 	<input type="text" placeholder="Where"> <br/>
-	<input type="text" placeholder="When"> <br/>
-	<%= text_area_tag :content, "Details", :class => "tinymce", :rows => 12, :cols => 120 %>
-	<%= tinymce %> <br/>
+	
+  <div class='input-group date' id='datetimepicker1'>
+      <input type='text' placeholder="Start" class="form-control" />
+      <span class="input-group-addon"> <span class="glyphicon glyphicon-calendar"></span></span>
+  </div>
+  
+  <div class='input-group date' id='datetimepicker2'>
+      <input type='text' placeholder="End" class="form-control" />
+      <span class="input-group-addon"> <span class="glyphicon glyphicon-calendar"></span></span>
+  </div>
+
+	<%= text_area_tag :content, "Details", :class => "tinymce", :rows => 10, :cols => 120 %>
+	<%= tinymce %>
+
 	<a href="#" class="btn btn-default submit_button">Send To Natalie</a> <br/>
 </div>
 
@@ -19,3 +30,9 @@
 </div>
 
 </div>
+
+<script type="text/javascript">
+    $(function () {
+        $('.date').datetimepicker();
+    });
+</script>
